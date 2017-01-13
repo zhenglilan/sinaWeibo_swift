@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */; };
 		E26CA13F1E25D3900068FF45 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = E26CA13E1E25D3900068FF45 /* MainVCSettings.json */; };
 		E26CA1421E260D0C0068FF45 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26CA1401E260D0C0068FF45 /* Home.storyboard */; };
 		E26CA1441E260F0C0068FF45 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26CA1431E260F0C0068FF45 /* Message.storyboard */; };
@@ -17,6 +18,11 @@
 		E288AEFD1E271980001B1E21 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AEFC1E271980001B1E21 /* BaseViewController.swift */; };
 		E288AEFF1E271AE1001B1E21 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AEFE1E271AE1001B1E21 /* VisitorView.swift */; };
 		E288AF011E271AF3001B1E21 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E288AF001E271AF3001B1E21 /* VisitorView.xib */; };
+		E288AF031E275809001B1E21 /* UIBarButtonItem_extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AF021E275809001B1E21 /* UIBarButtonItem_extention.swift */; };
+		E288AF051E275E84001B1E21 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AF041E275E84001B1E21 /* TitleButton.swift */; };
+		E288AF0D1E276FC2001B1E21 /* PoperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AF0B1E276FC2001B1E21 /* PoperViewController.swift */; };
+		E288AF0E1E276FC2001B1E21 /* PoperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E288AF0C1E276FC2001B1E21 /* PoperViewController.xib */; };
+		E288AF101E277828001B1E21 /* ZLLPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288AF0F1E277828001B1E21 /* ZLLPresentationController.swift */; };
 		E2D944151E24B6CF00BD4B0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D944141E24B6CF00BD4B0B /* AppDelegate.swift */; };
 		E2D9441A1E24B6CF00BD4B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D944181E24B6CF00BD4B0B /* Main.storyboard */; };
 		E2D9441C1E24B6CF00BD4B0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D9441B1E24B6CF00BD4B0B /* Assets.xcassets */; };
@@ -49,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoperViewAnimation.swift; sourceTree = "<group>"; };
 		E26CA13E1E25D3900068FF45 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		E26CA1411E260D0C0068FF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E26CA1431E260F0C0068FF45 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Message.storyboard; path = ../../Message.storyboard; sourceTree = "<group>"; };
@@ -59,6 +66,11 @@
 		E288AEFC1E271980001B1E21 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E288AEFE1E271AE1001B1E21 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		E288AF001E271AF3001B1E21 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		E288AF021E275809001B1E21 /* UIBarButtonItem_extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem_extention.swift; sourceTree = "<group>"; };
+		E288AF041E275E84001B1E21 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		E288AF0B1E276FC2001B1E21 /* PoperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoperViewController.swift; sourceTree = "<group>"; };
+		E288AF0C1E276FC2001B1E21 /* PoperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoperViewController.xib; sourceTree = "<group>"; };
+		E288AF0F1E277828001B1E21 /* ZLLPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLLPresentationController.swift; sourceTree = "<group>"; };
 		E2D944111E24B6CF00BD4B0B /* SinaWeibo_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D944141E24B6CF00BD4B0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D944191E24B6CF00BD4B0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				E26CA14E1E262C2F0068FF45 /* Category */,
+				E288AF041E275E84001B1E21 /* TitleButton.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -125,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E26CA14F1E262C4B0068FF45 /* UIButton_Extention.swift */,
+				E288AF021E275809001B1E21 /* UIBarButtonItem_extention.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -137,6 +151,17 @@
 				E288AF001E271AF3001B1E21 /* VisitorView.xib */,
 			);
 			path = Visitor;
+			sourceTree = "<group>";
+		};
+		E288AF0A1E276FC2001B1E21 /* UIPoperView */ = {
+			isa = PBXGroup;
+			children = (
+				E288AF0B1E276FC2001B1E21 /* PoperViewController.swift */,
+				E288AF0C1E276FC2001B1E21 /* PoperViewController.xib */,
+				E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */,
+				E288AF0F1E277828001B1E21 /* ZLLPresentationController.swift */,
+			);
+			path = UIPoperView;
 			sourceTree = "<group>";
 		};
 		E2D944081E24B6CF00BD4B0B = {
@@ -216,6 +241,7 @@
 		E2D944441E24B70E00BD4B0B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E288AF0A1E276FC2001B1E21 /* UIPoperView */,
 				E2D9444D1E24C6DA00BD4B0B /* HomeViewController.swift */,
 				E26CA1401E260D0C0068FF45 /* Home.storyboard */,
 			);
@@ -369,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D9441F1E24B6CF00BD4B0B /* LaunchScreen.storyboard in Resources */,
+				E288AF0E1E276FC2001B1E21 /* PoperViewController.xib in Resources */,
 				E26CA1471E260F4B0068FF45 /* Null.storyboard in Resources */,
 				E26CA14C1E260FDB0068FF45 /* Profile.storyboard in Resources */,
 				E26CA13F1E25D3900068FF45 /* MainVCSettings.json in Resources */,
@@ -407,11 +434,16 @@
 				E2D944151E24B6CF00BD4B0B /* AppDelegate.swift in Sources */,
 				E2D9444C1E24C6BB00BD4B0B /* MainViewController.swift in Sources */,
 				E2D944501E24C6E900BD4B0B /* MessageViewController.swift in Sources */,
+				E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */,
+				E288AF051E275E84001B1E21 /* TitleButton.swift in Sources */,
+				E288AF101E277828001B1E21 /* ZLLPresentationController.swift in Sources */,
 				E2D9444E1E24C6DA00BD4B0B /* HomeViewController.swift in Sources */,
 				E288AEFD1E271980001B1E21 /* BaseViewController.swift in Sources */,
 				E288AEFF1E271AE1001B1E21 /* VisitorView.swift in Sources */,
 				E2D944521E24C6F800BD4B0B /* DiscoverViewController.swift in Sources */,
+				E288AF0D1E276FC2001B1E21 /* PoperViewController.swift in Sources */,
 				E26CA1501E262C4B0068FF45 /* UIButton_Extention.swift in Sources */,
+				E288AF031E275809001B1E21 /* UIBarButtonItem_extention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
