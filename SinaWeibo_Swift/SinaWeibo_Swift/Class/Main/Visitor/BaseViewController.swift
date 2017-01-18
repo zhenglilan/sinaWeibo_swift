@@ -14,15 +14,19 @@ class BaseViewController: UITableViewController {
     lazy var visitorView: VisitorView = VisitorView.visitorView()
     
     // MARK: - 定义变量
-    var isLogin = true
+    var isLogin = UserAccountViewModel.shareUserAccountViewModel.isLogin
+
     
     // MARK: - 系统回调方法
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         setUpNavigationItems()
     }
     
     override func loadView() {
+        // 读取信息
+
         isLogin ? super.loadView() : setUpVisitorView()
     }
 }
@@ -48,7 +52,9 @@ extension BaseViewController {
         print("register")
     }
     @objc fileprivate func loginBtnClick() {
-        print("login")
+        let oauthVC = OauthViewController()
+        let oauthNav = UINavigationController(rootViewController: oauthVC)
+        present(oauthNav, animated: true, completion: nil)
     }
 }
 
