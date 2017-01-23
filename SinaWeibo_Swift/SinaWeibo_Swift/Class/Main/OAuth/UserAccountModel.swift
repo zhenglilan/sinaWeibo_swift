@@ -9,7 +9,7 @@
 import UIKit
 
 class UserAccountModel: NSObject, NSCoding {
-    // MARK: - accessToken的属性
+    // MARK: - 属性
     var access_token: String?
     var expires_in: TimeInterval = 0.0 {
         didSet {

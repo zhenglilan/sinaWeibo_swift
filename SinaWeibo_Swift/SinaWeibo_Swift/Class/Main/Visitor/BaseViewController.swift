@@ -26,7 +26,6 @@ class BaseViewController: UITableViewController {
     
     override func loadView() {
         // 读取信息
-
         isLogin ? super.loadView() : setUpVisitorView()
     }
 }

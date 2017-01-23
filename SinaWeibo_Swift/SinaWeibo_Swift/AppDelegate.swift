@@ -12,7 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var defaultViewController: UIViewController? {
+        let isLogin = UserAccountViewModel.shareUserAccountViewModel.isLogin
+        return isLogin ? WelcomeViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -21,9 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.orange
         
         // 纯代码构建项目使用window
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = MainViewController()
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = defaultViewController
+        window?.makeKeyAndVisible()
+        
+        print(NSHomeDirectory())
         return true
     }
 

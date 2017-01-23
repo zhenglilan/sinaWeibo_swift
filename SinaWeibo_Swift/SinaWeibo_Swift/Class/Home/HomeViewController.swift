@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HomeViewController: BaseViewController {
     
@@ -16,6 +17,7 @@ class HomeViewController: BaseViewController {
     fileprivate lazy var popViewAnimation: PoperViewAnimation = PoperViewAnimation {[unowned self] (isPopShow) in
         self.titleBtn.isSelected = isPopShow
     }
+    fileprivate lazy var viewModels: [StatusesViewModel] = [StatusesViewModel]()
     
     // MARK: - 系统回调函数
     override func viewDidLoad() {
@@ -29,6 +31,13 @@ class HomeViewController: BaseViewController {
         
         // 2. 登录成功
        setUpNavigationBar()
+        
+        // 3. 请求数据
+        loadStatuses()
+        
+        // 自适应cell中内容的高度
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
     }
 
 }
@@ -44,6 +53,7 @@ extension HomeViewController {
         titleBtn.setTitle("微博名称", for: .normal)
         titleBtn.addTarget(self, action: #selector(titleBtnClick(_:)), for: .touchUpInside)
         navigationItem.titleView = titleBtn
+        
     }
 }
 
@@ -64,8 +74,58 @@ extension HomeViewController {
     }
 }
 
+// MARK: - 请求数据
+extension HomeViewController {
+    fileprivate func loadStatuses() {
+        NetworkTool.shareInstance.loadHomeData { (result, error) in
+            if error != nil {
+                return
+            }
+            guard let resultArray = result else {
+                return
+            }
+            for dataDic in resultArray {
+               let status = Statuses.init(dict: dataDic)
+               let viewModel = StatusesViewModel.init(statuses: status)
+               self.viewModels.append(viewModel)
+            }
+
+            // 缓存图片
+            self.cacheImages(viewModels: self.viewModels)
+        }
+    }
+    fileprivate func cacheImages(viewModels: [StatusesViewModel]) {
+        let group = DispatchGroup()
+        for viewmodel in viewModels {
+            for picURL in viewmodel.picURLs {
+                group.enter()
+                SDWebImageManager.shared().downloadImage(with: picURL, options: [], progress: nil, completed: { (_, _, _, _, _) in
+                    group.leave()
+                })
+            }
+        }
+        // 刷新表格
+        group.notify(queue: DispatchQueue.main) {
+            // 全部图片都下载完成后，刷新表格
+            self.tableView.reloadData()
+        }
+    }
+}
 
 
+
+// MARK: - 代理方法
+extension HomeViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.viewModels.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellID") as! HomeViewCell
+        cell.viewModel = viewModels[indexPath.row]
+        return cell
+    }
+}
 
 
 

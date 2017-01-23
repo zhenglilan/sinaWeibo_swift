@@ -99,7 +99,6 @@ extension OauthViewController {
             }
             // 字典转模型
             let account = UserAccountModel.init(dict: accountDic)
-            
             // 请求用户数据
             self.loadUserInfo(account: account)
         }
@@ -121,6 +120,13 @@ extension OauthViewController {
             // 归档account            
                 // 归档
             NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            
+            // 将account赋值给单例里的account
+            UserAccountViewModel.shareUserAccountViewModel.account = account
+            // 退出授权页面，显示欢迎页
+            self.dismiss(animated: false, completion: { 
+                UIApplication.shared.keyWindow?.rootViewController = WelcomeViewController()
+            })
         }
     }
 }

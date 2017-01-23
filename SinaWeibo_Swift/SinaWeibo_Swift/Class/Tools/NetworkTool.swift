@@ -61,7 +61,7 @@ extension NetworkTool {
     }
 }
 
-// MARK- : 请求用户
+// MARK- : 请求用户数据
 extension NetworkTool {
     func loadUserInfo(account: UserAccountModel, finished: @escaping (_ result: [String: Any]?, _ error: Error?)->()) {
         let parameters = ["access_token": account.access_token,
@@ -71,3 +71,24 @@ extension NetworkTool {
         }
     }
 }
+
+// MARK: - 请求微博首页数据
+extension NetworkTool {
+    func loadHomeData(finished: @escaping (_ result: [[String: Any]]?, _ error: Error?) -> ()) {
+        let paramerter = ["access_token": (UserAccountViewModel.shareUserAccountViewModel.account?.access_token)!]
+        request(methodType: .GET, URLString: homeTimelineURLString, parameters: paramerter) { (result, error) in
+            guard let statusesDic = result as? [String: Any] else {
+                return
+            }
+            finished(statusesDic["statuses"] as? [[String: Any]], error)
+         }
+    }
+}
+
+
+
+
+
+
+
+
