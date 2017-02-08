@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1B37A13527219CAF1B7BB0A9 /* Pods_SinaWeibo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BC769E76DCC20997A8F2B0 /* Pods_SinaWeibo_Swift.framework */; };
+		E2296D901E49670500867C70 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D8E1E49670500867C70 /* ComposeViewController.swift */; };
+		E2296D911E49670500867C70 /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2296D8F1E49670500867C70 /* ComposeViewController.xib */; };
+		E2296D931E496CA200867C70 /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D921E496CA200867C70 /* ComposeTitleView.swift */; };
+		E2296D951E49756300867C70 /* ComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D941E49756300867C70 /* ComposeTextView.swift */; };
+		E2296D981E49B9A400867C70 /* PicPickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D971E49B9A400867C70 /* PicPickerCollectionView.swift */; };
+		E2296D9B1E49C0E000867C70 /* PicPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D991E49C0E000867C70 /* PicPickerCollectionViewCell.swift */; };
+		E2296D9C1E49C0E000867C70 /* PicPickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2296D9A1E49C0E000867C70 /* PicPickerCollectionViewCell.xib */; };
 		E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */; };
 		E26205171E2DF42600A597C0 /* OauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26205151E2DF42600A597C0 /* OauthViewController.swift */; };
 		E26205181E2DF42600A597C0 /* OauthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26205161E2DF42600A597C0 /* OauthViewController.xib */; };
@@ -73,6 +80,13 @@
 		18D37EA9B1CBE9618D042A26 /* Pods-SinaWeibo_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo_Swift/Pods-SinaWeibo_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		94BC769E76DCC20997A8F2B0 /* Pods_SinaWeibo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B445B8CB12F58D307AED6352 /* Pods-SinaWeibo_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo_Swift/Pods-SinaWeibo_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		E2296D8E1E49670500867C70 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		E2296D8F1E49670500867C70 /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
+		E2296D921E496CA200867C70 /* ComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
+		E2296D941E49756300867C70 /* ComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTextView.swift; sourceTree = "<group>"; };
+		E2296D971E49B9A400867C70 /* PicPickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerCollectionView.swift; sourceTree = "<group>"; };
+		E2296D991E49C0E000867C70 /* PicPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2296D9A1E49C0E000867C70 /* PicPickerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPickerCollectionViewCell.xib; sourceTree = "<group>"; };
 		E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoperViewAnimation.swift; sourceTree = "<group>"; };
 		E26205151E2DF42600A597C0 /* OauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthViewController.swift; sourceTree = "<group>"; };
 		E26205161E2DF42600A597C0 /* OauthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OauthViewController.xib; sourceTree = "<group>"; };
@@ -164,6 +178,28 @@
 				94BC769E76DCC20997A8F2B0 /* Pods_SinaWeibo_Swift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2296D8D1E4966EB00867C70 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				E2296D961E49B96000867C70 /* picPicker */,
+				E2296D8E1E49670500867C70 /* ComposeViewController.swift */,
+				E2296D8F1E49670500867C70 /* ComposeViewController.xib */,
+				E2296D921E496CA200867C70 /* ComposeTitleView.swift */,
+				E2296D941E49756300867C70 /* ComposeTextView.swift */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		E2296D961E49B96000867C70 /* picPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E2296D971E49B9A400867C70 /* PicPickerCollectionView.swift */,
+				E2296D991E49C0E000867C70 /* PicPickerCollectionViewCell.swift */,
+				E2296D9A1E49C0E000867C70 /* PicPickerCollectionViewCell.xib */,
+			);
+			path = picPicker;
 			sourceTree = "<group>";
 		};
 		E26205141E2DF40E00A597C0 /* OAuth */ = {
@@ -304,6 +340,7 @@
 		E2D944421E24B70E00BD4B0B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				E2296D8D1E4966EB00867C70 /* Compose */,
 				E2D944451E24B70E00BD4B0B /* Main */,
 				E2D944441E24B70E00BD4B0B /* Home */,
 				E2D944461E24B70E00BD4B0B /* Message */,
@@ -488,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26205181E2DF42600A597C0 /* OauthViewController.xib in Resources */,
+				E2296D9C1E49C0E000867C70 /* PicPickerCollectionViewCell.xib in Resources */,
 				E28D05081E305D9F00E604F9 /* WelcomeViewController.xib in Resources */,
 				E2D9441F1E24B6CF00BD4B0B /* LaunchScreen.storyboard in Resources */,
 				E288AF0E1E276FC2001B1E21 /* PoperViewController.xib in Resources */,
@@ -500,6 +538,7 @@
 				E2D9441C1E24B6CF00BD4B0B /* Assets.xcassets in Resources */,
 				E2D9441A1E24B6CF00BD4B0B /* Main.storyboard in Resources */,
 				E26CA1441E260F0C0068FF45 /* Message.storyboard in Resources */,
+				E2296D911E49670500867C70 /* ComposeViewController.xib in Resources */,
 				E26CA1491E260F910068FF45 /* Discover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,17 +615,21 @@
 				E262051A1E2DFF8600A597C0 /* Common.swift in Sources */,
 				E28D054B1E30BD5500E604F9 /* Date_Extension.swift in Sources */,
 				E28D05071E305D9F00E604F9 /* WelcomeViewController.swift in Sources */,
+				E2296D981E49B9A400867C70 /* PicPickerCollectionView.swift in Sources */,
 				E2D944541E24C70800BD4B0B /* ProfileViewController.swift in Sources */,
+				E2296D931E496CA200867C70 /* ComposeTitleView.swift in Sources */,
 				E26205171E2DF42600A597C0 /* OauthViewController.swift in Sources */,
 				E2D944151E24B6CF00BD4B0B /* AppDelegate.swift in Sources */,
 				E2D9444C1E24C6BB00BD4B0B /* MainViewController.swift in Sources */,
 				E26DC3671E2F5F7300638927 /* UserAccountViewModel.swift in Sources */,
 				E28D050D1E309E9100E604F9 /* Statuses.swift in Sources */,
+				E2296D901E49670500867C70 /* ComposeViewController.swift in Sources */,
 				E2D944501E24C6E900BD4B0B /* MessageViewController.swift in Sources */,
 				E2691BE81E31B4E1000772B6 /* StatusesViewModel.swift in Sources */,
 				E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */,
 				E288AF051E275E84001B1E21 /* TitleButton.swift in Sources */,
 				E288AF101E277828001B1E21 /* ZLLPresentationController.swift in Sources */,
+				E2296D951E49756300867C70 /* ComposeTextView.swift in Sources */,
 				E262051C1E2E1E5000A597C0 /* NetworkTool.swift in Sources */,
 				E2D9444E1E24C6DA00BD4B0B /* HomeViewController.swift in Sources */,
 				E288AEFD1E271980001B1E21 /* BaseViewController.swift in Sources */,
@@ -594,6 +637,7 @@
 				E26DC3651E2F080600638927 /* UserAccountModel.swift in Sources */,
 				E26D17251E349B8B00C4C6C0 /* PicCollectionView.swift in Sources */,
 				E288AEFF1E271AE1001B1E21 /* VisitorView.swift in Sources */,
+				E2296D9B1E49C0E000867C70 /* PicPickerCollectionViewCell.swift in Sources */,
 				E2D944521E24C6F800BD4B0B /* DiscoverViewController.swift in Sources */,
 				E288AF0D1E276FC2001B1E21 /* PoperViewController.swift in Sources */,
 				E26CA1501E262C4B0068FF45 /* UIButton_Extention.swift in Sources */,

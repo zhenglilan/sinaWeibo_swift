@@ -74,8 +74,12 @@ extension NetworkTool {
 
 // MARK: - 请求微博首页数据
 extension NetworkTool {
-    func loadHomeData(finished: @escaping (_ result: [[String: Any]]?, _ error: Error?) -> ()) {
-        let paramerter = ["access_token": (UserAccountViewModel.shareUserAccountViewModel.account?.access_token)!]
+    func loadHomeData(since_id: Int, max_id: Int, finished: @escaping (_ result: [[String: Any]]?, _ error: Error?) -> ()) {
+        let paramerter = [
+            "access_token": (UserAccountViewModel.shareUserAccountViewModel.account?.access_token)!,
+            "since_id": "\(since_id)",
+            "max_id": "\(max_id)"
+            ]
         request(methodType: .GET, URLString: homeTimelineURLString, parameters: paramerter) { (result, error) in
             guard let statusesDic = result as? [String: Any] else {
                 return

@@ -48,7 +48,11 @@ class HomeViewCell: UITableViewCell {
             // 3. 设置时间
             createTimeLabel.text = viewModel.createdAtTest
             // 4. 设置来源
-            sourceLabel.text = viewModel.sourceTest
+            if let source = viewModel.sourceTest {
+                sourceLabel.text = "来自" + source
+            } else {
+                sourceLabel.text = nil
+            }
             // 5. 设置认证图片
             vertifierImageView.image = viewModel.verifiedImage
             // 6. 设置等级图片
@@ -106,7 +110,7 @@ extension HomeViewCell {
         }
         
         // 有配图
-        picViewBottomConstraint.constant = 10 
+        picViewBottomConstraint.constant = 5
         // 取出layout
         let layout = picCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
        
@@ -124,7 +128,7 @@ extension HomeViewCell {
         
         // 3. 四张配图
         if count == 4 {
-            let picViewWH = imageViewWH * 2 + itemMargin
+            let picViewWH = imageViewWH * 2 + itemMargin + 1
             return CGSize(width: picViewWH, height: picViewWH)
         }
         

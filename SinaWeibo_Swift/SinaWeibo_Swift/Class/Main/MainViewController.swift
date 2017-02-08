@@ -133,6 +133,8 @@ extension MainViewController {
 extension MainViewController {
     // @objc作用是私有方法依旧可以加到方法列表中，并且保持私有
     @objc fileprivate func composeBtnClick() {
-        print("btnClick")
+        let composeVC = ComposeViewController()
+        let nav = UINavigationController(rootViewController: composeVC)
+        present(nav, animated: true, completion: nil)
     }
 }
