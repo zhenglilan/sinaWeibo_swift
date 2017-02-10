@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ComposeViewController: UIViewController {
 
@@ -32,7 +33,6 @@ class ComposeViewController: UIViewController {
         super.viewDidLoad()
         setUpNavigationBar()
         setUpNotification()
-       
     }
     
     deinit {
@@ -73,7 +73,22 @@ extension ComposeViewController {
     }
     
     @objc fileprivate func send() {
-       print(textView.getEmotionString())
+        textView.resignFirstResponder()
+        let statusText = textView.getEmotionString()
+        let finishCallback =  { (isSuccess: Bool) in
+            if !isSuccess {
+                SVProgressHUD.showError(withStatus: "发送微博失败")
+                return
+            }
+            SVProgressHUD.showSuccess(withStatus: "发送微博成功")
+            self.dismiss(animated: true, completion: nil)
+        }
+
+        if let image = imageArrayData.first {
+            NetworkTool.shareInstance.sendStatus(statusText: statusText, image: image, isSuccess: finishCallback)
+        }else {
+            NetworkTool.shareInstance.sendStatus(statusText: statusText, isSuccess:finishCallback)
+        }
     }
     
     /// 监听键盘高度

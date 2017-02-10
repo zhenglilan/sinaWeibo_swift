@@ -89,8 +89,40 @@ extension NetworkTool {
     }
 }
 
+// MARK: - 发送微博数据
+extension NetworkTool {
+    func sendStatus(statusText: String, isSuccess: @escaping (_ isSuccess: Bool)->()) {
+        let parameter = [
+            "access_token": (UserAccountViewModel.shareUserAccountViewModel.account?.access_token)!,
+            "status": statusText
+            ]
+        request(methodType: .POST, URLString: sendStatusURLString, parameters: parameter) { (result, error) in
+            if result != nil {
+                isSuccess(true)
+            }else {
+                isSuccess(false)
+            }
+        }
+    }
+}
 
-
+// MARK: - 发送带配图的微博数据
+extension NetworkTool {
+    func sendStatus(statusText: String, image: UIImage, isSuccess: @escaping (_ isSuccess: Bool)->()) {
+        let parameter = [
+            "access_token": (UserAccountViewModel.shareUserAccountViewModel.account?.access_token)!,
+            "status": statusText
+        ]
+        let imageData = UIImageJPEGRepresentation(image, 0.5)
+        post(sendStatusWithImageURLString, parameters: parameter, constructingBodyWith: { (formData) in
+            formData.appendPart(withFileData: imageData!, name: "pic", fileName: "123.png", mimeType: "image/png")
+        }, progress: nil, success: { (_, _) in
+            isSuccess(true)
+        }) { (_, error) in
+            print(error)
+        }
+    }
+}
 
 
 

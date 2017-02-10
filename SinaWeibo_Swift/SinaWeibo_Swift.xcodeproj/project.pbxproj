@@ -212,9 +212,9 @@
 		E225A27F1E4C67C400BC6D6A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E225A2801E4C67C400BC6D6A /* Emotion.swift */,
 				E225A2811E4C67C400BC6D6A /* EmotionManager.swift */,
 				E225A2821E4C67C400BC6D6A /* EmotionPackage.swift */,
+				E225A2801E4C67C400BC6D6A /* Emotion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

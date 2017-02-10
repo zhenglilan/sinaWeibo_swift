@@ -43,7 +43,7 @@ extension EmotionViewController {
         view.addSubview(collectionView)
         view.addSubview(toolbar)
         
-        collectionView.backgroundColor = UIColor.yellow
+        collectionView.backgroundColor = UIColor.init(red: 249.0, green: 249.0, blue: 249.0, alpha: 1)
         toolbar.backgroundColor = UIColor.lightGray
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false

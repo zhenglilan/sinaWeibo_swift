@@ -17,6 +17,8 @@ let app_secret = "4a23ac3a1d2b1e2fc6d5c1c69c3952cc"
 let accessTokenURLString = "https://api.weibo.com/oauth2/access_token"
 let userInfoURLString = "https://api.weibo.com/2/users/show.json"
 let homeTimelineURLString = "https://api.weibo.com/2/statuses/home_timeline.json"
+let sendStatusURLString = "https://api.weibo.com/2/statuses/update.json"
+let sendStatusWithImageURLString = "https://api.weibo.com/2/statuses/upload.json"
 
 // MARK: - 沙盒路径
 let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
