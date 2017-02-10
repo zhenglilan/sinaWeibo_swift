@@ -9,16 +9,23 @@
 import UIKit
 
 class ComposeViewController: UIViewController {
-    
+
     // MARK: - 属性
     fileprivate lazy var titleView: ComposeTitleView = ComposeTitleView()
-    @IBOutlet weak var textView: ComposeTextView!
     fileprivate lazy var imageArrayData: [UIImage] = [UIImage]()
+    fileprivate lazy var emotionVC: EmotionViewController = EmotionViewController {[weak self] (emotion) in
+        /// 闭包回调函数
+        self?.textView.insertEmotion(emotion: emotion)
+        self?.textViewDidChange(self!.textView)
+    }
+    
+    @IBOutlet weak var textView: ComposeTextView!
     @IBOutlet weak var picPickerCollectionView: PicPickerCollectionView!
     
     // MARK: - 约束属性
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var picPickerHeightConstraint: NSLayoutConstraint!
+    
 
     // MARK: - 系统方法
     override func viewDidLoad() {
@@ -66,9 +73,10 @@ extension ComposeViewController {
     }
     
     @objc fileprivate func send() {
-        
+       print(textView.getEmotionString())
     }
-    /// 监听键盘
+    
+    /// 监听键盘高度
     @objc fileprivate func keyboardWillChangeFrame(_ note: NSNotification) {
         let duration = note.userInfo!["UIKeyboardAnimationDurationUserInfoKey"] as! TimeInterval
         // 获取键盘最终Y
@@ -83,12 +91,23 @@ extension ComposeViewController {
         }
     }
     
+    /// 点击第一个选择照片按钮
     @IBAction func picPickerBtnClick(_ sender: UIButton) {
         textView.resignFirstResponder()
         picPickerHeightConstraint.constant = UIScreen.main.bounds.height * 0.65
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
         }
+    }
+    
+    /// 点击第四个切换表情键盘
+    @IBAction func swichEmotionKeyboard(_ sender: UIButton) {
+        // 退出键盘
+        textView.resignFirstResponder()
+        // 切换键盘
+        textView.inputView = textView.inputView != nil ? nil : emotionVC.view
+        // 弹出键盘
+        textView.becomeFirstResponder()
     }
 }
 

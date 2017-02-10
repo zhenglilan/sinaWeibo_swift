@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1B37A13527219CAF1B7BB0A9 /* Pods_SinaWeibo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BC769E76DCC20997A8F2B0 /* Pods_SinaWeibo_Swift.framework */; };
+		E225A2831E4C67C400BC6D6A /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E225A27C1E4C67C400BC6D6A /* Emoticons.bundle */; };
+		E225A2841E4C67C400BC6D6A /* EmotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225A27D1E4C67C400BC6D6A /* EmotionCollectionViewCell.swift */; };
+		E225A2851E4C67C400BC6D6A /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225A27E1E4C67C400BC6D6A /* EmotionViewController.swift */; };
+		E225A2861E4C67C400BC6D6A /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225A2801E4C67C400BC6D6A /* Emotion.swift */; };
+		E225A2871E4C67C400BC6D6A /* EmotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225A2811E4C67C400BC6D6A /* EmotionManager.swift */; };
+		E225A2881E4C67C400BC6D6A /* EmotionPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E225A2821E4C67C400BC6D6A /* EmotionPackage.swift */; };
 		E2296D901E49670500867C70 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D8E1E49670500867C70 /* ComposeViewController.swift */; };
 		E2296D911E49670500867C70 /* ComposeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2296D8F1E49670500867C70 /* ComposeViewController.xib */; };
 		E2296D931E496CA200867C70 /* ComposeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D921E496CA200867C70 /* ComposeTitleView.swift */; };
@@ -16,6 +22,8 @@
 		E2296D9B1E49C0E000867C70 /* PicPickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2296D991E49C0E000867C70 /* PicPickerCollectionViewCell.swift */; };
 		E2296D9C1E49C0E000867C70 /* PicPickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2296D9A1E49C0E000867C70 /* PicPickerCollectionViewCell.xib */; };
 		E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */; };
+		E25E64E71E4D5CC800AE6E11 /* EmotionAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E64E61E4D5CC800AE6E11 /* EmotionAttachment.swift */; };
+		E25E64E91E4D5FB300AE6E11 /* UITextView_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25E64E81E4D5FB300AE6E11 /* UITextView_Extention.swift */; };
 		E26205171E2DF42600A597C0 /* OauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26205151E2DF42600A597C0 /* OauthViewController.swift */; };
 		E26205181E2DF42600A597C0 /* OauthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26205161E2DF42600A597C0 /* OauthViewController.xib */; };
 		E262051A1E2DFF8600A597C0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26205191E2DFF8600A597C0 /* Common.swift */; };
@@ -80,6 +88,12 @@
 		18D37EA9B1CBE9618D042A26 /* Pods-SinaWeibo_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo_Swift/Pods-SinaWeibo_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		94BC769E76DCC20997A8F2B0 /* Pods_SinaWeibo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B445B8CB12F58D307AED6352 /* Pods-SinaWeibo_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo_Swift/Pods-SinaWeibo_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		E225A27C1E4C67C400BC6D6A /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		E225A27D1E4C67C400BC6D6A /* EmotionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionCollectionViewCell.swift; sourceTree = "<group>"; };
+		E225A27E1E4C67C400BC6D6A /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		E225A2801E4C67C400BC6D6A /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		E225A2811E4C67C400BC6D6A /* EmotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionManager.swift; sourceTree = "<group>"; };
+		E225A2821E4C67C400BC6D6A /* EmotionPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionPackage.swift; sourceTree = "<group>"; };
 		E2296D8E1E49670500867C70 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		E2296D8F1E49670500867C70 /* ComposeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComposeViewController.xib; sourceTree = "<group>"; };
 		E2296D921E496CA200867C70 /* ComposeTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeTitleView.swift; sourceTree = "<group>"; };
@@ -88,6 +102,8 @@
 		E2296D991E49C0E000867C70 /* PicPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicPickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		E2296D9A1E49C0E000867C70 /* PicPickerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PicPickerCollectionViewCell.xib; sourceTree = "<group>"; };
 		E24A4A971E28CA0900469864 /* PoperViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoperViewAnimation.swift; sourceTree = "<group>"; };
+		E25E64E61E4D5CC800AE6E11 /* EmotionAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionAttachment.swift; sourceTree = "<group>"; };
+		E25E64E81E4D5FB300AE6E11 /* UITextView_Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView_Extention.swift; sourceTree = "<group>"; };
 		E26205151E2DF42600A597C0 /* OauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthViewController.swift; sourceTree = "<group>"; };
 		E26205161E2DF42600A597C0 /* OauthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OauthViewController.xib; sourceTree = "<group>"; };
 		E26205191E2DFF8600A597C0 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
@@ -180,10 +196,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E225A27B1E4C67C400BC6D6A /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				E225A27F1E4C67C400BC6D6A /* Model */,
+				E225A27C1E4C67C400BC6D6A /* Emoticons.bundle */,
+				E225A27D1E4C67C400BC6D6A /* EmotionCollectionViewCell.swift */,
+				E225A27E1E4C67C400BC6D6A /* EmotionViewController.swift */,
+				E25E64E61E4D5CC800AE6E11 /* EmotionAttachment.swift */,
+				E25E64E81E4D5FB300AE6E11 /* UITextView_Extention.swift */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		E225A27F1E4C67C400BC6D6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E225A2801E4C67C400BC6D6A /* Emotion.swift */,
+				E225A2811E4C67C400BC6D6A /* EmotionManager.swift */,
+				E225A2821E4C67C400BC6D6A /* EmotionPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E2296D8D1E4966EB00867C70 /* Compose */ = {
 			isa = PBXGroup;
 			children = (
 				E2296D961E49B96000867C70 /* picPicker */,
+				E225A27B1E4C67C400BC6D6A /* Emotion */,
 				E2296D8E1E49670500867C70 /* ComposeViewController.swift */,
 				E2296D8F1E49670500867C70 /* ComposeViewController.xib */,
 				E2296D921E496CA200867C70 /* ComposeTitleView.swift */,
@@ -532,6 +572,7 @@
 				E26CA1471E260F4B0068FF45 /* Null.storyboard in Resources */,
 				E26CA14C1E260FDB0068FF45 /* Profile.storyboard in Resources */,
 				E26CA13F1E25D3900068FF45 /* MainVCSettings.json in Resources */,
+				E225A2831E4C67C400BC6D6A /* Emoticons.bundle in Resources */,
 				E2D9444A1E24B93A00BD4B0B /* Default-568h@2x.png in Resources */,
 				E288AF011E271AF3001B1E21 /* VisitorView.xib in Resources */,
 				E26CA1421E260D0C0068FF45 /* Home.storyboard in Resources */,
@@ -614,6 +655,7 @@
 			files = (
 				E262051A1E2DFF8600A597C0 /* Common.swift in Sources */,
 				E28D054B1E30BD5500E604F9 /* Date_Extension.swift in Sources */,
+				E25E64E91E4D5FB300AE6E11 /* UITextView_Extention.swift in Sources */,
 				E28D05071E305D9F00E604F9 /* WelcomeViewController.swift in Sources */,
 				E2296D981E49B9A400867C70 /* PicPickerCollectionView.swift in Sources */,
 				E2D944541E24C70800BD4B0B /* ProfileViewController.swift in Sources */,
@@ -626,21 +668,27 @@
 				E2296D901E49670500867C70 /* ComposeViewController.swift in Sources */,
 				E2D944501E24C6E900BD4B0B /* MessageViewController.swift in Sources */,
 				E2691BE81E31B4E1000772B6 /* StatusesViewModel.swift in Sources */,
+				E225A2881E4C67C400BC6D6A /* EmotionPackage.swift in Sources */,
 				E24A4A981E28CA0900469864 /* PoperViewAnimation.swift in Sources */,
 				E288AF051E275E84001B1E21 /* TitleButton.swift in Sources */,
+				E25E64E71E4D5CC800AE6E11 /* EmotionAttachment.swift in Sources */,
 				E288AF101E277828001B1E21 /* ZLLPresentationController.swift in Sources */,
 				E2296D951E49756300867C70 /* ComposeTextView.swift in Sources */,
 				E262051C1E2E1E5000A597C0 /* NetworkTool.swift in Sources */,
 				E2D9444E1E24C6DA00BD4B0B /* HomeViewController.swift in Sources */,
 				E288AEFD1E271980001B1E21 /* BaseViewController.swift in Sources */,
+				E225A2851E4C67C400BC6D6A /* EmotionViewController.swift in Sources */,
 				E2691BEA1E31E22E000772B6 /* HomeViewCell.swift in Sources */,
+				E225A2871E4C67C400BC6D6A /* EmotionManager.swift in Sources */,
 				E26DC3651E2F080600638927 /* UserAccountModel.swift in Sources */,
 				E26D17251E349B8B00C4C6C0 /* PicCollectionView.swift in Sources */,
 				E288AEFF1E271AE1001B1E21 /* VisitorView.swift in Sources */,
 				E2296D9B1E49C0E000867C70 /* PicPickerCollectionViewCell.swift in Sources */,
 				E2D944521E24C6F800BD4B0B /* DiscoverViewController.swift in Sources */,
 				E288AF0D1E276FC2001B1E21 /* PoperViewController.swift in Sources */,
+				E225A2841E4C67C400BC6D6A /* EmotionCollectionViewCell.swift in Sources */,
 				E26CA1501E262C4B0068FF45 /* UIButton_Extention.swift in Sources */,
+				E225A2861E4C67C400BC6D6A /* Emotion.swift in Sources */,
 				E288AF031E275809001B1E21 /* UIBarButtonItem_extention.swift in Sources */,
 				E28D054D1E30C3DC00E604F9 /* User.swift in Sources */,
 			);

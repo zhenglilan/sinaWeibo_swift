@@ -83,6 +83,9 @@
                                 <rect key="frame" x="244" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="compose_emoticonbutton_background"/>
+                                <connections>
+                                    <action selector="swichEmotionKeyboard:" destination="-1" eventType="touchUpInside" id="Ik2-Y7-nMd"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                         <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="h5J-st-z6d"/>
@@ -90,7 +93,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PAq-aT-8MW">
                                 <rect key="frame" x="320" y="10" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="compose_pic_add"/>
+                                <state key="normal" image="compose_keyboardbutton_background"/>
                             </button>
                         </barButtonItem>
                     </items>
@@ -114,8 +117,8 @@
     </objects>
     <resources>
         <image name="compose_emoticonbutton_background" width="24" height="24"/>
+        <image name="compose_keyboardbutton_background" width="24" height="24"/>
         <image name="compose_mentionbutton_background" width="24" height="24"/>
-        <image name="compose_pic_add" width="70" height="70"/>
         <image name="compose_toolbar_picture" width="24" height="24"/>
         <image name="compose_trendbutton_background" width="24" height="24"/>
     </resources>
